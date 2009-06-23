@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+		<rss version="2.0">
+			<channel>
+				 	<title>SOFTCATALÀ</title>
+				 	<link>http://www.softcatala.org</link>
+				 	<description>Informàtica i programari en català | Articles</description>
+				 	<image><title>www.softcatala.org</title><link>http://www.softcatala.org</link><url>http://planeta.softcatala.org/images/logo.png</url></image>
+				 	<lastBuildDate>Sun, 14 Oct 2007 02:49:20 +0200</lastBuildDate>
+				 	<language>ca</language>
+					
+						<item>
+						<title>Entrevista a Softcatalà.</title>
+ 						<link>http://www.softcatala.org/articles/article70.html</link>
+ 						</item>
+				
+						<item>
+						<title>El Firefox 2.0: la nova generació.</title>
+ 						<link>http://www.softcatala.org/articles/article69.html</link>
+ 						</item>
+				
+						<item>
+						<title>Un portàtil per a cada nen.</title>
+ 						<link>http://www.softcatala.org/articles/article68.html</link>
+ 						</item>
+				
+						<item>
+						<title>Digitalització dels llibres de les biblioteques.</title>
+ 						<link>http://www.softcatala.org/articles/article67.html</link>
+ 						</item>
+				
+						<item>
+						<title>Cultura Lliure: el cas brasiler.</title>
+ 						<link>http://www.softcatala.org/articles/article66.html</link>
+ 						</item>
+				
+						<item>
+						<title>La col·lecció Terminologia Oberta del TERMCAT: una iniciativa per a l’alliberament de recursos.</title>
+ 						<link>http://www.softcatala.org/articles/article65.html</link>
+ 						</item>
+				
+						<item>
+						<title>Un recorregut pel GNOME 2.14.</title>
+ 						<link>http://www.softcatala.org/articles/article64.html</link>
+ 						</item>
+				
+						<item>
+						<title>La història de José.</title>
+ 						<link>http://www.softcatala.org/articles/article63.html</link>
+ 						</item>
+				</channel>
+				</rss>	

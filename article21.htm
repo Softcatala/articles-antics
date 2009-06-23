@@ -1,0 +1,429 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html">
+  <!--#exec cmd="/home/sites/org.softcatala/web/cgi-bin/gaudi/cap.pl articles" -->
+  <title>El corrector ortogr&agrave;fic de Softcatal&agrave;</title>
+</head>
+
+<body lang="ca">
+
+<table width="613" border="0" cellspacing="0" cellpadding="0"
+bgcolor="#ffffcc" align="center">
+  <tbody> 
+  <tr>
+      <td colspan="3" valign="top"><img src="/projectes/images/barra.gif"
+        width="700" height="15"></td>
+    </tr>
+    <tr>
+      <td valign="top"><img src="/projectes/images/angulo-1.gif" width="130"
+        height="35"></td>
+      <td valign="top"><br>
+      </td>
+      <td valign="top">
+        <div align="right">
+        <img src="/projectes/images/angulo2.gif" width="144"
+        height="35"></div>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" colspan="3">
+        <blockquote>
+
+          
+        <div align="left"> 
+          <p align="center"><font size="2"><span
+          class="Txt-pequeBolcolor"><span class="Txt-pequeBolcolor"><font
+          face="Verdana, Arial, Helvetica, sans-serif" size="3"><br>
+            <br>
+            </font></span></span></font></p>
+          <table width="600" cellspacing="0" cellpadding="0">
+            <tbody> 
+            <tr valign="top"> 
+              <td><span style="font-weight: bold;">El corrector ortogr&agrave;fic 
+                de Softcatal&agrave;</span><br>
+                11/05/2003 Joan Moratinos,&nbsp; jmo@softcatala.org - <a
+
+ href="http://www.jmoratinos.com/">http://www.jmoratinos.com/</a><span
+
+ style="font-weight: bold;"></span> 
+                <p align="justify" style="margin-bottom: 0cm;"><b>Presentaci&oacute;</b></p>
+                <p align="justify" style="margin-bottom: 0cm;">Quan fa dos anys 
+                  la casa Sun va anunciar que havia adquirit el programa StarOffice 
+                  per fer-lo servir com a base del programa obert OpenOffice, 
+                  Softcatal&agrave; va pensar que era una bona ocasi&oacute; per 
+                  tenir una aplicaci&oacute; ofim&agrave;tica en catal&agrave;, 
+                  d&#8217;un nivell digne i que pogu&eacute;s competir amb l&#8217;omnipresent 
+                  Office de Microsoft, no disponible en catal&agrave; des de fa 
+                  moltes versions. S&#8217;esperava molt d&#8217;OpenOffice, atesa 
+                  la remarcable qualitat de l&#8217;antic StarOffice, d&#8217;una 
+                  banda, i la pres&egrave;ncia de Sun entre els promotors, de 
+                  l&#8217;altra.</p>
+                <p align="justify" style="margin-bottom: 0cm;"> A m&eacute;s d&#8217;una 
+                  traducci&oacute; de qualitat dels programes, s&#8217;imposava 
+                  dotar-los d&#8217;un corrector ortogr&agrave;fic de catal&agrave;. 
+                  OpenOffice, com a programari lliure, permetia sense restriccions 
+                  la incorporaci&oacute; de correctors ortogr&agrave;fics, i a 
+                  m&eacute;s estava documentat com fer-ho (evidentment, aix&ograve; 
+                  no vol dir que sigui f&agrave;cil, nom&eacute;s que &eacute;s 
+                  possible).</p>
+                <p align="justify" style="margin-bottom: 0cm;"><b>Primer contacte</b></p>
+                <p align="justify" style="margin-bottom: 0cm;">Tan aviat com va 
+                  estar disponible la primera versi&oacute; beta d&#8217;OpenOffice 
+                  (s&#8217;ha de dir que el corrector &eacute;s com&uacute; a 
+                  tota la <i>suite</i><span
+
+ style="font-style: normal;">, per&ograve; per a les proves el m&eacute;s adequat 
+                  &eacute;s el trac&shy;tament de texts), es varen fer les primeres 
+                  proves. Es va veure que el corrector &#8220;oficial&#8221; d&#8217;OpenOffice, 
+                  anomenat MySpell, usava una llista de regles de generaci&oacute; 
+                  de paraules i una llista d&#8217;arrels semblants a les del 
+                  conegut ispell (el corrector m&eacute;s usat en l&#8217;entorn 
+                  Linux) i per tant es varen crear fitxers a partir dels fitxers 
+                  d&#8217;ispell disponi&shy;bles, creats fa uns anys per Ignasi 
+                  Labastida, a partir d&#8217;una llista de paraules de Joan Dol&ccedil;. 
+                  Despr&eacute;s d&#8217;&#8220;enganar&#8221; MySpell fent-li 
+                  creure que les paraules estaven en angl&egrave;s es va engegar 
+                  el tractament de texts. Resultat: programa penjat. Es va veure 
+                  que la culpa era dels accents i altres car&agrave;cters de codi 
+                  major o igual que 128. Com a conse&shy;q&uuml;&egrave;ncia, 
+                  calia modificar el motor de correcci&oacute; (es tracta d&#8217;un 
+                  &#8220;component&#8221;, un pro&shy;grama aut&ograve;nom que 
+                  es cridat pel programa principal quan cal; en principi, &eacute;s 
+                  com&uacute; a totes les lleng&uuml;es, encara que est&agrave; 
+                  &#8220;ing&egrave;nuament&#8221; orientat a l&#8217;angl&egrave;s).</span></p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> Despr&eacute;s d&#8217;aquesta 
+                  prova inicial es tenia una primera &#8220;versi&oacute;&#8221; 
+                  del corrector, amb totes les errades i mancances que hom pugui 
+                  imaginar-se (per exemple, marcava com err&ograve;nies les paraules 
+                  amb accent), per&ograve; aix&iacute; i tot era un comen&ccedil;ament.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"><br>
+                </p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"><b>Programa de feina</b></p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;">Es varen fer les seg&uuml;ents 
+                  consideracions generals, que es varen anar refinant mentre s&#8217;anava 
+                  treballant:</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;">a) Calia corregir el motor perqu&egrave; 
+                  accept&agrave;s car&agrave;cters accentuats i similars. Quan 
+                  es va poder modificar el motor varen sorgir noves idees de millora, 
+                  que es varen aplicar posteriorment.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;">b) S&#8217;havia de provar el 
+                  corrector &#8220;arreglat&#8221; amb les paraules de l&#8217;ispell 
+                  de Labastida i, eventualment, completar els fitxers. Al capdavall, 
+                  es va veure que era m&eacute;s efectiu comen&ccedil;ar la feina 
+                  des de zero.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;">c) Es va decidir no fer feina 
+                  per a cap corrector ortogr&agrave;fic concret, sin&oacute; amb 
+                  un format que permet&eacute;s generar fitxers per a diversos 
+                  correctors (com a conseq&uuml;&egrave;ncia, OpenOf&shy;fice, 
+                  AbiWord i ispell comparteixen ara la mateixa llista de regles 
+                  i d&#8217;arrels). No vol&iacute;em fer el corrector &#8220;d&#8217;OpenOffice&#8221;, 
+                  sin&oacute; el de Softcatal&agrave;.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;">d) Es volia un corrector que 
+                  fos exhaustiu, que reconegu&eacute;s, com a m&iacute;nim, totes 
+                  les paraules del diccionari normatiu i totes les variants geogr&agrave;fiques 
+                  de la llengua. Al final, es va enriquir encara amb una multitud 
+                  de noms propis (com ara els top&ograve;nims dels Pa&iuml;sos 
+                  Catalans, antrop&ograve;nims i top&ograve;nims d&#8217;arreu 
+                  del m&oacute;n) i paraules comunes absents dels diccionaris 
+                  generals (com gentilicis, catalans i estrangers).</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;">e) S&#8217;havia de mirar la 
+                  qualitat de les propostes. El corrector, a m&eacute;s de detectar 
+                  les errades, proposa correccions. Idealment, hauria de proposar 
+                  en primer lloc les paraules m&eacute;s versemblants per substituir 
+                  la incorrecta.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> Detallarem aquests punts, un 
+                  darrere l&#8217;altre, per&ograve; cal fer notar que tots es 
+                  varen tractar en paral&middot;lel. </p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> </p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"><b>Canvis al motor de correcci&oacute;</b></p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;">Les errades que es varen detectar 
+                  al motor es varen comunicar a la llista de correu dedicada a 
+                  aquesta q&uuml;esti&oacute;. Igualment, es varen sotmetre a 
+                  la consideraci&oacute; del respon&shy;sable del projecte les 
+                  solucions proposades i altres millores. S&#8217;ha de dir que 
+                  algunes varen ser acceptades (i passaren a la versi&oacute; 
+                  &#8220;general&#8221;) i altres no. Per tant, la nostra versi&oacute; 
+                  &eacute;s diferent de l&#8217;altra, encara que perfectament 
+                  compatible. Si alg&uacute; fa servir el nostre corrector per 
+                  a una altra llengua, li ha de funcionar sense problema. Igualment, 
+                  els nostres fitxers de regles i arrels funcionen amb la versi&oacute; 
+                  &#8220;general&#8221; del motor, encara que amb unes prestacions 
+                  menors. </p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> Primer de tot es va arreglar 
+                  el problema dels car&agrave;cters accentuats. Es tractava d&#8217;una 
+                  errada familiar a tots els programadors de C: es feien servir 
+                  car&agrave;cters &#8220;amb signe&#8221; per accedir a taules 
+                  de car&agrave;cters. Aquest error &eacute;s t&iacute;pic dels 
+                  programes pensats nom&eacute;s per a l&#8217;angl&egrave;s, 
+                  i n&#8217;anunciava d&#8217;altres que aviat es varen trobar.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> Quan el corrector va comen&ccedil;ar 
+                  a considerar correctes paraules com &#8220;m&agrave;&#8221;, 
+                  es va veure que fallava amb &#8220;CEL&middot;LA&#8221;. La 
+                  ra&oacute; era que considerava, err&ograve;niament el punt volat 
+                  com una lletra min&uacute;scula, i considerava la paraula incorrecta 
+                  perqu&egrave; tenia una combinaci&oacute; &#8220;il&middot;legal&#8221; 
+                  de maj&uacute;scules i min&uacute;scules (aix&ograve; va fer 
+                  veure que hi ha lletres que no s&oacute;n ni &#8220;maj&uacute;scules&#8221; 
+                  ni &#8220;min&uacute;scules&#8221;, cosa que no estava prevista 
+                  al motor ori&shy;ginal). La soluci&oacute; va ser introduir 
+                  al motor la idea de &#8220;car&agrave;cters neutres&#8221;, 
+                  que no s&#8217;han de tenir en compte per determinar si un mot 
+                  est&agrave; en maj&uacute;scules, min&uacute;scules, etc. A 
+                  m&eacute;s del punt volat, s&oacute;n &#8220;neutres&#8221; 
+                  el guionet i l&#8217;ap&ograve;strof.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> El guionet no es considerava 
+                  part de les paraules, com tampoc el punt volat. El problema 
+                  amb el guionet feia que no es poguessin detectar moltes errades 
+                  de combina&shy;ci&oacute; de verbs i pronoms febles. La q&uuml;esti&oacute; 
+                  del punt volat encara era m&eacute;s greu. Es va modificar una 
+                  part de l&#8217;OpenOffice per adaptar-lo a les necessitats 
+                  del catal&agrave;.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> Un altre canvi important del 
+                  motor va ser necessari per corregir una greu man&shy;can&ccedil;a. 
+                  Es donava per bo &#8220;l&#8217;institut&#8221;, per&ograve; 
+                  no &#8220;l&#8217;Institut&#8221;, que es considerava una paraula 
+                  amb una maj&uacute;scula a la tercera posici&oacute;. La versi&oacute; 
+                  inicial del motor nom&eacute;s havia previst que una paraula 
+                  pogu&eacute;s estar en tres combinacions de maj&uacute;scules 
+                  i min&uacute;scules: tot min&uacute;scules, tot maj&uacute;scules 
+                  i maj&uacute;scula inicial. Aix&ograve; es va haver d&#8217;ampliar 
+                  per al cas dels ap&ograve;strofs, de manera que la lletra que 
+                  precedeix l&#8217;ap&ograve;strof i la que el segueix poden 
+                  ser tant min&uacute;scules com maj&uacute;scules, independentment 
+                  una de l&#8217;altra. Encara que aquest problema afecta altres 
+                  lleng&uuml;es diferents del catal&agrave; (com ara el franc&egrave;s), 
+                  no es va afegir a la versi&oacute; &#8220;general&#8221; del 
+                  corrector. De moment, &eacute;s una caracter&iacute;stica exclusiva 
+                  de la versi&oacute; catalana d&#8217;OpenOffice.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> Altres modificacions profundes 
+                  del motor afecten la generaci&oacute; d&#8217;alternatives i 
+                  es descriuran m&eacute;s endavant.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"><br>
+                </p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"><b>Regles i llistes de paraules</b></p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;">El corrector funciona comparant 
+                  la paraula que ha escrit l&#8217;usuari amb una llista que es 
+                  guarda dins la mem&ograve;ria de l&#8217;ordinador. Per tal 
+                  de fer la llista manejable, es &#8220;comprimeix&#8221; la llista 
+                  completa fent servir &#8220;regles&#8221;, que generen moltes 
+                  paraules a partir d&#8217;un nombre m&eacute;s redu&iuml;t d&#8217;arrels. 
+                  Aix&ograve; &eacute;s especialment &uacute;til i necessari en 
+                  el cas dels paradigmes verbals (i encara s&#8217;agreuja si 
+                  s&#8217;afegeixen les combinacions de pro&shy;noms febles). 
+                  Per exemple, a partir de &#8220;cantava&#8221; es poden generar 
+                  totes les formes del paradigma (&#8220;cant/canto/cante, cantes, 
+                  canta...&#8221;). El nostre corrector t&eacute; al voltant de 
+                  900 regles i 160.000 arrels (aquestes no corresponen a paraules 
+                  diferents; per exem&shy;ple, els verbs, encara que siguin perfectament 
+                  regulars, tenen diverses entrades per recon&egrave;ixer les 
+                  formes combinades amb pronoms febles).</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> La forma tradicional de fer 
+                  els fitxers de regles i arrels &eacute;s partir d&#8217;una 
+                  llista de paraules exhaustiva i deixar que un programa generi 
+                  aquells fitxers. En el nostre cas, es va optar per fer la feina 
+                  &#8220;a m&agrave;&#8221;, un sistema m&eacute;s labori&oacute;s 
+                  per&ograve; m&eacute;s eficient. Es va crear un fitxer per generar 
+                  les regles, amb m&eacute;s informaci&oacute; de la que s&#8217;ha 
+                  fet servir de moment per al corrector, per&ograve; que segurament 
+                  es far&agrave; servir per a altres projectes. Igualment, es 
+                  va fer un fitxer per a les arrels. A partir dels dos fitxers 
+                  i emprant un programa bastant complex fet en Perl, i orientat 
+                  absolutament al catal&agrave;, es varen gene&shy;rar els fitxers 
+                  que formen part de la versi&oacute; catalana de l&#8217;OpenOffice, 
+                  a m&eacute;s dels fitxers per a ispell i AbiWord.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> Unes de les dades que no s&#8217;han 
+                  emprat dels fitxers originals fa refer&egrave;ncia al dialecte 
+                  a qu&egrave; pertany una determinada forma (la majoria pertanyen 
+                  al conjunt de la llengua). Es va considerar d&#8217;entrada 
+                  fer diverses versions del corrector, que es diferen&shy;ciarien 
+                  nom&eacute;s en els paradigmes verbals. Amb aix&ograve; es guanyaria 
+                  en qualitat. Per exemple, la paraula &#8220;telefon&#8221; (sense 
+                  accent) es considera correcta perqu&egrave; &eacute;s la primera 
+                  persona sense desin&egrave;ncia del present d&#8217;indicatiu 
+                  del verb &#8220;telefonar&#8221;. Molts d&#8217;usuaris preferirien, 
+                  tanmateix, que el corrector consider&agrave;s &#8220;telefon&#8221; 
+                  com un error, per &#8220;tel&egrave;fon&#8221;. La idea de les 
+                  diferents versions del corrector es va abandonar a la vista 
+                  dels malentesos que provocava, encara que segurament mereixeria 
+                  ser reconsiderada (per exemple, fent que el corrector es pogu&eacute;s 
+                  ajustar a les prefer&egrave;ncies de cadasc&uacute; seleccio&shy;nant 
+                  una s&egrave;rie d&#8217;opcions).</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> A m&eacute;s de les paraules 
+                  del diccionari normatiu es varen incloure a la llista els noms 
+                  de municipis i comarques dels Pa&iuml;sos Catalans, gentilicis 
+                  de les Illes Balears, top&ograve;nims i gentilicis d&#8217;arreu 
+                  del m&oacute;n, noms propis de persona i abreviatures. Per defi&shy;nici&oacute;, 
+                  la llista no &eacute;s completa i es t&eacute; el prop&ograve;sit 
+                  d&#8217;ampliar-la en pr&ograve;ximes versions del corrector 
+                  (per exemple amb m&eacute;s gentilicis, cognoms comuns, marques 
+                  comercials, etc.).</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"><b>Propostes de correcci&oacute;</b></p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;">Una de les tasques d&#8217;un 
+                  corrector ortogr&agrave;fic &eacute;s fer propostes per a una 
+                  paraula incor&shy;recta, a requesta de l&#8217;usuari. MySpell 
+                  ha heretat d&#8217;ispell el sistema de cercar alternati&shy;ves. 
+                  A partir de la paraula que ha teclejat l&#8217;usuari es generen 
+                  variacions i es proposen com alternatives si resulten ser paraules 
+                  correctes. Les variacions es calculen suposant que s&#8217;ha 
+                  com&egrave;s un dels seg&uuml;ents errors: l&#8217;ordre de 
+                  dues lletres est&agrave; invertit, s&#8217;ha om&egrave;s una 
+                  lletra, s&#8217;ha posat una lletra de m&eacute;s, s&#8217;ha 
+                  posat una lletra per comptes d&#8217;una altra o s&#8217;han 
+                  aferrat dues paraules.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> S&#8217;han resolt dues de les 
+                  mancances m&eacute;s evidents del sistema de generaci&oacute; 
+                  de propostes, amb una ampliaci&oacute; del motor de correcci&oacute;. 
+                  D&#8217;una banda, els suggeriments es generaven &#8220;cegament&#8221;, 
+                  sense tenir en compte si eren m&eacute;s o menys probables. 
+                  Per exemple, les propostes per a &#8220;aixo&#8221; (sense accent) 
+                  no inclo&iuml;en &#8220;aix&ograve;&#8221;, no perqu&egrave; 
+                  no es gener&agrave;s, sin&oacute; perqu&egrave; la llista no 
+                  era prou llarga. D&#8217;una altra banda, davant una paraula 
+                  equivocada com &#8220;colaborar&#8221; no es proposava &#8220;col&middot;laborar&#8221;, 
+                  ja que est&agrave; a una &#8220;dist&agrave;ncia&#8221; de m&eacute;s 
+                  d&#8217;una lletra. La soluci&oacute; als dos problemes va ser 
+                  crear una llista de suggeriments &#8220;preferits&#8221;, que 
+                  permet crear parells de substituci&oacute; (per exemple, prova 
+                  &#8220;l&middot;l&#8221; quan trobis &#8220;l&#8221;, o b&eacute; 
+                  prova &#8220;&ograve;&#8221; quan trobis &#8220;o&#8221;), que 
+                  poden ser de mides dife&shy;rents. Aquestes propostes es generen 
+                  abans que les altres i per tant es mostren al cap&shy;damunt 
+                  de la llista. Aquesta idea es va suggerir tamb&eacute; al responsable 
+                  del projecte i va coincidir amb una de semblant procedent d&#8217;Hongria. 
+                  Al final, la nostra versi&oacute; imple&shy;menta aquesta prestaci&oacute; 
+                  diferentment de la versi&oacute; &#8220;general&#8221; (que 
+                  la inclour&agrave; en una pr&ograve;xima versi&oacute; del corrector) 
+                  per&ograve; per al fitxer es va adoptar el format que es va 
+                  pro&shy;posar des d&#8217;Hongria, amb la qual cosa els nostres 
+                  fitxers continuen essent compatibles amb els de la versi&oacute; 
+                  &#8220;general&#8221;.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"> Es varen haver de fer altres 
+                  correccions menors a la part del motor encarregada de generar 
+                  els suggeriments. Hi havia problemes amb els punts suspensius 
+                  i amb els noms propis escrits completament en maj&uacute;scules.</p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;"><b>El futur</b></p>
+                <p align="justify"
+
+ style="margin-bottom: 0cm; font-style: normal;">El corrector no est&agrave; tancat 
+                  per&ograve; &eacute;s perfectament funcional. Alguns aspectes 
+                  demanen una revisi&oacute; a fons, i tots es poden refinar. 
+                  Una llista de desitjos podria incloure: esten&shy;dre el corrector 
+                  a altres productes (per exemple, AbiWord, que fa servir la mateixa 
+                  llista de paraules per&ograve; t&eacute; un motor m&eacute;s 
+                  limitat, Office de Microsoft, QuarkXpress, Eudora...), fer el 
+                  corrector configurable, poder afegir paraules al diccionari 
+                  personal de manera intel&middot;ligent (per exemple, afegir 
+                  paradigmes verbals sencers; escrivint aquest document amb OpenOffice, 
+                  he dit al corrector que consider&agrave;s correcte el nom del 
+                  pro&shy;grama, per&ograve; continua marcant-me com incorrecte 
+                  &#8220;l&#8217;OpenOffice&#8221;), s&#8217;han d&#8217;afegir 
+                  m&eacute;s paraules, es pot modificar la manera de generar suggeriments.</p>
+                <br>
+                <span style="font-weight: bold;">M&eacute;s informaci&oacute;</span><br>
+                <br>
+                Projecte <a href="http://www.softcatala.org/projectes/myspell/">Ispell/MySpell 
+                en catal&agrave;</a> <br>
+                Web personal de <a href="http://www.jmoratinos.com/">Joan Moratinos</a><span
+
+ style="font-weight: bold;"><span style="font-weight: bold;"><br>
+                </span><br>
+                </span>&nbsp; <br>
+              </td>
+            </tr>
+            </tbody> 
+          </table>
+          <p align="center"><font size="2"><span
+          class="Txt-pequeBolcolor"><span class="Txt-pequeBolcolor"><font
+          face="Verdana, Arial, Helvetica, sans-serif" size="3"> </font></span></span></font></p>
+        </div>
+        </blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" colspan="3"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table width="700" border="0" bgcolor="#ffffcc" align="center">
+  <tbody>
+    <tr>
+      <td>
+        <blockquote>
+
+          <div align="left">
+          <p><br>
+          </p>
+          </div>
+        </blockquote>
+
+        <blockquote>
+          <br>
+        </blockquote>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--#exec cmd="/home/sites/org.softcatala/web/cgi-bin/gaudi/final.pl articles" -->
+<br>
+</body>
+</html>

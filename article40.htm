@@ -1,0 +1,115 @@
+<!--#exec cmd="/home/sites/org.softcatala/web/cgi-bin/gaudi/cap.pl admpub" -->
+<table width="700" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffcc" align="center">
+    <tr>
+      <td colspan="3" valign="top"><img src="/images/barra.gif" width="700" height="15"> </td>
+    </tr>
+    <tr>
+      <td valign="top"><img src="/images/angulo-1.gif" width="133"  height="35"> </td>
+      <td valign="top">&nbsp;</td>
+      <td valign="top">
+      <div align="right"><img src="/images/angulo2.gif" width="144" height="35"> </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" valign="top">
+      <h4>&nbsp; </h4>
+      <table width="600" border="0" align="center">
+        <tbody>
+          <tr>
+            <td> <span style="font-weight: bold;"></span>
+			<!-- inici document -->
+
+<h2>RECURSOS LINGUISTICS EN CODI LLIURE</h2>
+
+<h3>Processament del Llenguatge Natural</h3>
+<p>Lluís Padró<br>
+<a href="mailto:padro@lsi.upc.es">padro@lsi.upc.es</a></p>
+
+<p>El terme "Processament del Llenguatge Natural" (PLN) engloba les tecnologies dedicades a automatitzar processos que requereixen un cert grau de comprensió de la llengua. Aplicacions típiques d'aquestes tecnologies són els traductors automàtics, els correctors sintàctics, els resumidors automàtics, les interfícies telefòniques de diàleg, etc.</p>
+
+<p>Per poder desenvolupar aplicacions com les anteriors, són necessaris una sèrie de recursos i eines informàtiques relacionades amb la llengua: Bases de dades amb informació morfològica i semàntica de les paraules, programes capaços d'extreure l'estructura sintàctica d'una frase, o de decidir si un nom propi (per exemple, "Barcelona") es refereix a una ciutat o a un equip de futbol segons el context on apareix, etc.</p>
+ 
+<p>Cadascuna d'aquestes eines bàsiques requereix molts anys d'esforç, recerca i desenvolupament, que en general només és abordable des de departaments de recerca universitaris o de grans multinacionals.  La falta de disponibilitat de recursos d'aquesta mena constitueix un seriós fre a l'avenç del desenvolupament d'aplicacions finals que tractin la llengua. En el cas particular del català, s'hi afegeix el fet que sovint les grans companyies de software considerin innecessària i poc rendible el desenvolupament de productes en una llengua que veuen com minoritària o no-oficial.</p>
+
+<p>Per tant, cal emprendre passos en la direcció de que hi hagi disponibles eines i recursos per al PLN, que puguin ser usats sense restriccions, i que permetin avenços més ràpids en aquest camp tecnològic, i que alhora facilitin el desenvolupament d'aquest tipus de programari per a la llengua catalana. </p>
+
+<p>En conseqüència, el Centre de Recerca en Tecnologies i Aplicacions del Llenguatge i la Parla (TALP) de la UPC, ha llançat la primera versió de FreeLing, una suite d'analitzadors lingüístics bàsics, que ofereix la possibilitat de ser integrable en qualsevol sistema de PLN, extensible, i portable a noves llengües. Per fer possible tot això, la suite es llicencia com programari lliure, sota la llicencia <a href="http://www.fsf.org/copyleft/lesser.html">LGPL</a>. Més informació a <a href="http://www.lsi.upc.es/~nlp">www.lsi.upc.es/~nlp</a>.</p>
+
+<h3>Programari Lliure</h3>
+<p>Malgrat que les companyies de software tradicional insisteixen en que el programari lliure no és un model viable, de fet ofereix clars
+avantatges per als usuaris, així com moltes oportunitats de negoci per companyies de software innovadores: Per una banda, tant els usuaris com els desenvolupadors es beneficien de les millores que gent d'arreu del món pugui fer al codi, obtenint un programari de més alta qualitat. Per l'altra, el fet que el codi sigui obert, no elimina l'activitat comercial de les companyies de software, sinó que la canvia per afavorir el consumidor: Els productors de software ja no poden basar el seu negoci en vendre productes "<i>prêt-à-porter</i>" sense cap mena de garantia, però en canvi poden oferir múltiples serveis associats a aquell programari: Instal·lació, manteniment, personalització, extensió sota demanda, suport tècnic, o qualsevol altra activitat de valor afegit.</p>
+
+<p>Aquest model de negoci alternatiu resulta inconvenient per a unes poques companyies productores de software a gran escala, però és una molt bona notícia per a petites i mitjanes empreses del sector de la informàtica, que poden omplir un nou nínxol del mercat, i òbviament, també per als usuaris, que finalment poden exercir el seu dret a escollir en un mercat de lliure competència.</p>
+
+<p>En el nostre cas, el fet d'oferir la nostra suite d'analitzadors sota llicencia LGPL, permet que pugui ser usada per construir aplicacions comercials de PLN. El fet que sigui programari lliure  fa que tothom pugui usar-la en les mateixes condicions, i que ningú  pugui treure profit exclusiu de les millores que faci a les eines en sí. </p>
+
+<h3>Analitzadors del centre TALP</h3>
+
+<p>Els analitzadors es distribueixen en forma de llibreria C++ que pot ser cridada des de qualsevol programa per obtenir l'anàlisi lingüística d'un text.  La versió actual inclou les següents  funcionalitats per al castellà, el català i l'anglès:</p>
+
+<ul>
+<li> Separació de paraules i frases.
+<li> Anàlisi morfològica de les paraules (determinació dels possibles lemes i categories gramaticals de cada paraula: per exemple,  "cases" pot ser un nom -plural del lema "casa"- o una forma verbal del lema "casar").
+<li> Reconeixement de multiparaules (per exemple,  "a_la_vora_de")
+<li> Reconeixement de noms propis (per exemple,  "Universitat Politècnica de Catalunya").
+<li> Reconeixement de números (per exemple,  "dos milions cent trenta mil")
+<li> Reconeixement de dates (per exemple,  "el vint-i-tres de març")
+<li> Reconeixement de quantitats monetàries (per exemple,  "tres mil lliures esterlines")
+<li> Reconeixement de percentatges i proporcions (per exemple,  "un de cada tres", "el dotze per cent")
+<li> Desambiguació morfosintàctica (determinació de la categoria gramatical correcta de cada paraula segons el context on apareix, per exemple,  a "les cases són grans" la paraula "cases" és un nom, plural de "casa",  però a "Quan et cases?" és una forma verbal de "casar").
+</ul>
+
+<p>Properes versions, inclouran també <em>chunking</em> (reconeixement de sintagmes i la seva estructura sintàctica) i classificació del
+ tipus de noms propis (de persona, de lloc, d'organització, ...)</p>
+
+<p>Els diccionaris morfològics pel català i el castellà han estat desenvolupats i revisats per experts en lingüística del <a href="http://clic.fil.ub.es">Centre de
+ Llenguatge i Computació de la Universitat de Barcelona</a> i tenen les següents característiques: </p>
+ <ul>
+<li> Anglès<br>
+ Més de 160.000 formes d'uns 78.000 lemes diferents, obtinguts automàticament de textos anotats.  </li>
+<li> Castellà<br>
+Vora de 71.000 formes, contenint tots els lemes de categories tancades (articles, preposicions, etc.) més totes les formes dels 5.000 lemes més freqüents de categories obertes (noms, verbs, adjectius i adverbis)</li>
+<li> Català<br>
+Vora de 46.000 formes, contenint tots els lemes de categories tancades més totes les formes dels 5.000 lemes més freqüents de categories obertes.</li></ul>
+
+<p> Sobre un text general, els analitzadors morfològics cobreixen totes les ocurrències de paraules de categories tancades més el 80% de
+ les obertes. Les paraules que no estan al diccionari es tracten amb un procés estadístic sobre els seus sufixos, que proposa la categoria gramatical correcta en el 90% dels casos.</p>
+
+<p>El desambiguador morfosintàctic segueix un model estadístic de Markov, i desambigua correctament més del 96% de les paraules en
+ tots tres idiomes.</p>
+
+<p> L'anàlisi morfològica es realitza a una velocitat de 6.000 paraules/segon en un P4 a 2.4GHz. El desambiguador morfosintàctic va a unes 3.100 paraules/segon. Si es realitzen ambdues tasques sobre el mateix processador alhora, la velocitat conjunta és de 2.300 paraules/segon.</p>
+
+<h3>Conclusions i Futur</h3>
+
+<p>FreeLing és una suite d'analitzadors lingüístics per al català, el castellà i l'anglès, completament escrita en C++, i distribuïda sota llicència LGPL. Això en facilita la portabilitat a d'altres llengües, i l'adaptabilitat a necessitats específiques dels usuaris o desenvolupadors. </p>
+
+<p>Esperem que aquest programari constitueixi un recurs valuós per a la comunitat que treballa en PLN, tan en temes de recerca (totes les millores al programari revertiran en benefici de la comunitat), com en el desenvolupament d'aplicacions comercials (la llicència LGPL permet l'ús dels analitzadors com un component en un sistema comercial).</p>
+
+<p>Les futures versions de la llibreria inclouran noves capacitats, en les següents línies:</p>
+
+<ul>
+<li> Noves tasques: Classificació de noms propis, <em>chunking</em>, anotació semàntica, desambiguació de sentits, resolució de l'anàfora i coreferència, etc.</lI>
+<li> Millor cobertura: Augmentar la mida dels diccionaris per les llengües actuals, i incloure noves llengües.</li>
+<li> Oferir diferents opcions pel mateix servei (per exemple, diversos algorismes de desambiguació, per tal que el programador pugui escollir la més adient a les seves necessitats).</li>
+<li> Millorar la capacitat d'incorporació de noves llengües, de manera que se'n puguin afegir modificant el mínim de codi.</li>
+</ul>
+
+<p><em>Aquest document és &copy; 2004 Lluís Padró. Es permet el seu ús i distribució en qualsevol mitjà sempre que no sigui modificat i sinclogui aquesta nota.</em>
+
+		</td>
+	</tr>
+				<!-- final document -->
+			
+            </td>
+          </tr>
+        </tbody>
+      </table>
+	  <br>
+      <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!--#exec cmd="/home/sites/org.softcatala/web/cgi-bin/gaudi/final.pl admpub" -->

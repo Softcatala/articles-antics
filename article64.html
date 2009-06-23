@@ -1,0 +1,1678 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ca">
+<head>
+<!--#exec cmd="/home/sites/org.softcatala/web/cgi-bin/gaudi/cap.pl articles" -->
+
+
+
+
+
+  
+  
+  
+  
+  <title>Un recorregut pel GNOME 2.14</title>
+</head>
+
+
+<body>
+
+
+
+
+
+<table align="center" bgcolor="#ffffcc" border="0" cellpadding="0" cellspacing="0" width="700">
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+    <tr>
+
+
+
+
+
+      <td colspan="3" valign="top"><img src="/projectes/images/barra.gif" height="15" width="700">
+      </td>
+
+
+
+
+
+    </tr>
+
+
+
+
+
+    <tr>
+
+
+
+
+
+      <td valign="top"><img src="/projectes/images/angulo-1.gif" height="35" width="130"> </td>
+
+
+
+
+
+      <td> <br>
+
+
+
+
+
+      </td>
+
+
+
+
+
+      <td valign="top">
+      
+      
+      
+      
+      <div align="right"><img src="/projectes/images/angulo2.gif" height="35" width="144"> </div>
+
+
+
+
+
+      </td>
+
+
+
+
+
+    </tr>
+
+
+
+
+
+    <tr>
+
+
+
+
+
+      <td colspan="3" valign="top">
+      
+      
+      
+      
+      <blockquote>
+        
+        
+        
+        
+        <div align="left">
+        
+        
+        
+        
+        <table style="width: 600px; height: 92px;" cellpadding="0" cellspacing="0">
+
+
+
+
+
+          <tbody>
+
+
+
+
+
+            <tr>
+
+
+
+
+
+              <td>
+              
+              
+              
+              
+              <h3>Un recorregut pel GNOME 2.14</h3>
+
+
+
+
+
+              </td>
+
+
+
+
+
+            </tr>
+
+
+
+
+
+          
+          
+          
+          
+          </tbody>
+        
+        
+        
+        
+        </table>
+
+
+
+
+
+        
+        
+        
+        
+        <table cellpadding="0" cellspacing="0" width="600">
+
+
+
+
+
+          <tbody>
+
+
+
+
+
+            <tr valign="top">
+
+
+
+
+
+              <td>
+              
+              
+              
+              
+              <p align="justify"><font color="#000000"><i><b>Constru&iuml;t
+sobre les espatlles de gegants, el GNOME 2.14 arribar&agrave; a les
+botigues el 15 de mar&ccedil;. Apart de noves i m&eacute;s
+polides
+funcionalitats, els desenvolupadors han estat treballant contra
+rellotge per a millorar el rendiment de les aplicacions i biblioteques
+d'&uacute;s m&eacute;s quotidi&agrave;. En aquest
+recorregut es detalla
+el treball m&eacute;s brillant que s'ha dut a terme, el qual ha
+acabat
+fent-se cam&iacute; en aquesta nova versi&oacute; del GNOME.</b></i></font></p>
+
+
+
+
+
+              
+              
+              
+              
+              <h3><font color="#000000">El rei de la
+velocitat</font></h3>
+
+
+
+
+
+              
+              
+              
+              
+              <p align="justify"><font color="#000000">Millores
+significatives al GNOME 2.14 han condu&iuml;t a una notable millora
+de
+velocitat a l'escriptori. S'ha millorat la velocitat de
+representaci&oacute; dels tipus de lletres i un nou gestor
+d'assignaci&oacute; de mem&ograve;ria anomenat GSlice, molt
+similar en
+moltes coses al gestor de blocs del nucli del Linux, ofereix unes
+notables millores de rendiment al GNOME. Determinats punts lents
+identificats al GNOME, com ara l'inici de sessi&oacute;,
+tamb&eacute;
+han estat optimitzats pel nostre genial equip de reis de la velocitat.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center>
+              <img src="art64/gmemchunk.png" title="" alt=""></center>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><i>Comparaci&oacute; de rendiment
+del
+GMemChunk (l'antic gestor), El Malloc i el GSlice amb 1, 5, 10 i 20
+fils cadascun fent 1 mili&oacute; d'assignacions i desassignacions
+d'una GList.</i></center>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+Una aplicaci&oacute; que ha cridat molt l'atenci&oacute;
+&eacute;s el
+Terminal del GNOME, que ara pot mostrar el contingut complet del
+diccionari a la pantalla literalment en un segon, o en menys de 2
+segons si s'utilitzen tipus de lletres amb antidentat (utilitzant tipus
+de lletra amb antidentat, l'xterm va necessitar 1 minut i 13 segons per
+a fer el mateix!).<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center>
+              <img src="art64/vte.png" alt="" title=""></center>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><i><small><span style="font-family: Courier New,Courier,monospace;">time cat
+/usr/share/dict/words</span></small> (tots els
+terminals amb el tipus de lletra fixa amb 80x25 car&agrave;cters). </i></center>
+
+
+
+
+
+              </font></p>
+
+
+
+
+
+              
+              
+              
+              
+              <h3><font color="#000000">Protegit</font></h3>
+
+
+
+
+
+              
+              
+              
+              
+              <p align="justify"><font color="#000000"><a href="http://www.gnomefiles.org/app.php?soft_id=1082">Pessulus</a>,
+un
+editor de blocatges per al GNOME, n'&eacute;s part del nou paquet
+d'administraci&oacute;, un conjunt d'eines per a administradors.
+Pessulus permet que els administradors inhabilitin determinades
+funcionalitats de l'escriptori GNOME. Aquesta funci&oacute;
+&eacute;s
+molt &uacute;til en entorns d'empresa i a cibercaf&egrave;s, on
+els
+usuaris no han de poder editar els pannells, utilitzar la consola, etc.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img style="width: 584px; height: 537px;" src="art64/pessulus.png" alt="" title=""></center>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><i>Les opcions per a blocar la
+pantalla, sortir de la
+sessi&oacute; i apagar l'ordinador han estat inhabilitades per als
+usuaris. </i></center>
+
+
+
+
+
+              </font> </p>
+
+
+
+
+
+              
+              
+              
+              
+              <h3 style="font-style: italic;"><font color="#000000">Push It</font></h3>
+
+
+
+
+
+Una altra novetat en el nou paquet d'administraci&oacute;
+&eacute;s
+              <a href="http://www.gnome.org/projects/sabayon/">Sabayon</a>.
+Aquesta potent eina permet que els administradors
+cre&iuml;n
+perfils per a grups d'usuaris, per exemple <span style="font-style: italic;">Programadors</span> o <span style="font-style: italic;">Administradors</span>
+i defineixin determinades configuracions obligat&ograve;ries per
+defecte per a aquest grups. Els administradors poden editar i desplegar
+perfils r&agrave;pidament canviant les configuracions des de dins
+d'una
+nova sessi&oacute; imbricada del GNOME.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><a href="art64/sabayon-large.png"><img style="width: 578px; height: 326px;" src="art64/sabayon.png" alt="" title="" border="0"></a></center>
+
+
+
+
+
+
+              
+              
+              
+              
+              <center><i>Edici&oacute; interactiva del
+perfil <span style="font-style: italic;">Penguins</span></i></center>
+
+
+
+
+
+
+              
+              
+              
+              
+              <h3>Cercar l'amor</h3>
+
+
+
+
+
+              
+              
+              
+              
+              <p align="justify"><font color="#000000">El
+GNOME 2.14
+hauria d'anomenar-se el GNOME <span style="font-style: italic;">cercable</span>,
+considerant
+l'addici&oacute; de
+nous i potents sistemes de cerca al <span style="font-weight: bold;">Nautilus</span>
+i al <span style="font-weight: bold;">Yelp</span>.
+Tots dos tenen
+un mode de cerca tradicional m&eacute;s un mode de cerca,
+r&agrave;pid
+i superen&egrave;rgic, per a aquells que esteu acostumats al Beagle!.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center>
+              <img style="width: 575px; height: 373px;" src="art64/nautilus-search.png" alt="" title=""></center>
+
+
+
+
+
+              </font></p>
+
+
+
+
+
+              
+              
+              
+              
+              <p style="text-align: center; font-style: italic;"><font color="#000000">Les cerques al nautilus es poden desar i
+tornar-les a obrir
+m&eacute;s tard com a carpetes.</font></p>
+
+
+
+
+
+              
+              
+              
+              
+              <h3>Ajuda!</h3>
+
+
+
+
+
+              
+              
+              
+              
+              <p align="justify">Com hem dit, el Yelp, el
+navegador de
+l'ajuda del GNOME, acaba d'adquirir la capacitat de cerca,
+per&ograve;
+tamb&eacute; ha guanyat molt, molt m&eacute;s. Ara,
+l'acc&eacute;s a
+les p&agrave;gines <span style="font-style: italic;">man</span>
+de UNIX i a les p&agrave;gines <span style="font-style: italic;">Info</span>
+de GNU ara est&agrave; habilitat per defecte (fins i tot s'hi poden
+fer
+cerques!), i podeu imprimir c&ograve;pies en paper del vostres
+manuals;
+i, per a acabar-ho d'arrodonir, tot va molt m&eacute;s
+r&agrave;pid.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              </p>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img style="width: 582px; height: 528px;" src="art64/yelp.png" alt="" title=""></center>
+
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><font color="#000000"><span style="font-style: italic;">Cerqueu ajuda i llegiu manuals i fitxers d'informaci&oacute;.</span></font><font color="#000000"></font></div>
+
+
+
+
+
+
+              
+              
+              
+              
+              <h3>Un missatge per a la xicota</h3>
+
+
+
+
+
+              
+              
+              
+              
+              <p align="justify"><font color="#000000">L'<a href="http://ekiga.org/">Ekiga</a>,
+abans conegut com GNOME Meeting, ha arribat a la versi&oacute; 2.0!
+Ara, l'Ekiga admet un nombre de funcions incre&iuml;ble, incloent-hi la
+compatibilitat per a SIP i H323 per a veu i v&iacute;deo per IP,
+configuraci&oacute; STUN autom&agrave;tica, compatibilitat amb
+PC-a-tel&egrave;fon per a fer trucades internacionals
+econ&ograve;miques, i moltes coses m&eacute;s. A m&eacute;s de serun
+excel&middot;lent client VoIP, l'Ekiga tamb&eacute; s'integra amb la
+vostra llibreta d'adreces de l'Evolution o amb el directori LDAP de
+l'empresa, aix&iacute; com amb els serveis de p&agrave;gines blanques
+del vostre prove&iuml;dor VoIP per tal que no us calgui haver de
+recordar les adreces VoIP.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img src="art64/ekiga.png" title="" alt=""></center>
+
+
+
+
+              </font></p>
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><font style="font-style: italic;" color="#000000">Trucada SIP en progr&eacute;s amb &agrave;udio i v&iacute;deo.</font></div>
+
+
+
+
+
+
+              
+              
+              
+              
+              <p align="justify"><font color="#000000">A m&eacute;s de l'Ekiga, els usuaris que no tinguin cap compte SIP poden registrar-ne un amb&nbsp;</font><font color="#000000"><a href="http://www.ekiga.net/">Ekiga.net</a></font><font color="#000000">, aconseguint pres&egrave;ncia SIP gratu&iuml;ta a Internet. </font> </p>
+
+
+
+
+
+              
+              
+              
+              
+              <h3>Mireu a trav&eacute;s de qualsevol finestra</h3>
+
+
+
+
+
+              
+              
+              
+              
+              <p align="justify">El <span style="font-weight: bold;">Metacity</span>,
+el gestor de finestres del GNOME, ha rebut algunes noves
+caracter&iacute;stiques interessants. En primer lloc, disposa de vores
+amb resist&egrave;ncia: aix&ograve; significa que les vores de les
+finestres ofereixen resist&egrave;ncia quan intenteu moure unes
+finestres sobre les altres, fent possible que alinear les finestres
+siguii m&eacute;s f&agrave;cils. Les vores dels monitors i els quadres
+tamb&eacute; ofereixen resist&egrave;ncia per a poder alinear finestres
+contra les vores dels monitors.<br>
+
+
+
+
+
+              <br>
+S'ha millorat la funci&oacute; de m&uacute;ltiples monitors, amb o
+sense Xinerama, evitant conscientment posar finestres petites i quadres
+de di&agrave;leg entre els l&iacute;mits dels monitors. Aix&ograve;
+significa que molts quadres de di&agrave;leg d'aplicacions antigues,
+com ara les de GTK+ 1.2 i les de Motif, seran despla&ccedil;ats del
+centre de la pantalla a una banda per tal que seguixin sent llegibles.<br>
+
+
+
+
+
+              <br>
+Per ajudar elsusuaris que usen finestres d'X remotes, el Metacity
+marcar&agrave; les finestres que s'estan executant a una m&agrave;quina
+diferent de la del Metacity. Aix&ograve; permetr&agrave; que els
+usuaris identifiquin a quina m&agrave;quina s'est&agrave; executant una
+aplicaci&oacute; gr&agrave;fica, i ajudar&agrave; a prevenir que
+tasques possiblement destructives s'executin a la m&agrave;quina que no
+pertoca..<br>
+
+
+
+
+
+              <br>
+Finalment, ara el Metacity t&eacute; un nou gestor de composici&oacute;
+integrat. El nou gestor de composici&oacute; usa la libcm i OpenGL, i
+implementa totes les caracter&iacute;stiques de composici&oacute;
+b&agrave;siques, com ara ombres, transpar&egrave;ncies dels
+men&uacute;s i minimitzacions animades. Ara, mostrar finestres
+enfosquides i canviar la mida de les finestres ja no provocar&agrave;
+efectes visuals desagradables, ja que ara tot aix&ograve; es gestiona a
+una mem&ograve;ria externa a la pantalla abans de fer la
+composici&oacute;. La integraci&oacute; del gestor de composici&oacute;
+amb el Metacity proporciona la pot&egrave;ncia d'un gestor de finestres
+i de composici&oacute; alhora, juntament amb la gran capacitat de
+gesti&oacute; del Metacity per a aplicacions velles o que funcionen
+incorrectament. El gestor de composici&oacute; del Metacity necessita
+les darreres caracter&iacute;stiques de la versi&oacute; inestable
+d'X.org a m&eacute;s de la nova extensi&oacute;
+''texture-from-pixmap'', i per tant aquesta funci&oacute; est&agrave;
+inhabilitada per defecte.<br>
+
+
+
+
+
+              </p>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><a href="art64/compositing-manager-large.png"><img style="border: 0px solid ; width: 566px; height: 431px;" src="art64/compositing-manager.png" alt=""></a><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">el
+gestor de composici&oacute; del Metacity fent ombres sota la finestra
+(amb un tema que utilitza el motor basat en Clearlooks 2.7 Cairo).</span></div>
+
+
+
+
+
+              
+              
+              
+              
+              <h3>El m&oacute;n sencer a les vostres mans</h3>
+
+
+
+
+
+              
+              
+              
+              
+              <p align="justify">Arriba el <span style="font-weight: bold;">Deskbar</span>,
+una fabulosa nova miniaplicaci&oacute; per als quadres de l'escriptori
+del GNOME. El Deskbar permet executar programes, obrir adreces
+d'inter&egrave;s, utilitzar motors de cerca, fer cerques amb Google,
+Yahoo o Beagle al moment i molt m&eacute;s. Els connectors de cerca del
+Deskbar s'han escrit en Python, i per tant se'n poden desenvolupar
+m&eacute;s de nous molt r&agrave;pidament.<br>
+
+
+
+
+
+              </p>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img src="art64/deskbar.png" alt="" title=""></center>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">El Deskbar dins un quadre</span><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              <br>
+El Deskbar tamb&eacute; es presenta en un mode de mida redu&iuml;da per
+a quadres petits o verticals en qu&egrave; el camp d'entrada se'n
+desplega.
+              <h3>Canvis</h3>
+
+
+
+
+
+              
+              
+              
+              
+              <p align="justify">Ara, una caracter&iacute;stica
+important per a l'usuari dom&egrave;stic com &eacute;s el canvi
+r&agrave;pid d'usuari est&agrave; disponible a l'escriptori. A l'igual
+que el canvi opcional des del panell, tamb&eacute; podeu canviar
+d'usuari des del di&agrave;leg de final de sessi&oacute; i des de
+l'estalvi de pantalla.<br>
+
+
+
+
+
+              </p>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img src="art64/fusa.png" alt="" title=""></center>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">&nbsp;canvieu entre usuaris directament
+des del panell.</span><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              
+              
+              
+              
+              <h3>Evolution&nbsp;</h3>
+La darrera versi&oacute; de l'<a href="http://www.gnome.org/projects/evolution/">Evolution</a>
+permet l'&uacute;s de diversos protocols i servidors nous, incloent el
+nou servidor Hula i el CalDAV, un protocol d'agenda semblant al WebDAV.
+Es completa aix&iacute; una part que&nbsp; s'ha trobat a faltar durant
+molt de temps en aquest paquet ofim&agrave;tic de treball en grup
+lliure i obert, i ve juntament amb l'IMAP i l'LDAP per a oferir-vos una
+connnexi&oacute; itinerant a la vostra agenda. De la mateixa manera que
+una agenda local, Groupwise o Exchange, aquestes agendes es poden
+editar i compartir amb altres usuaris.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><a href="art64/evolution-large.png"><img style="border: 0px solid ; width: 556px; height: 336px;" src="art64/evolution.png" alt=""></a><br>
+
+
+
+
+
+              </div>
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">visualitzaci&oacute; de
+calendaris a l'Evolution,
+incloent un calendari CalDAV i un calendari Webcal</span><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              <br>
+Ara, L'Evolution integra completament la possibilitat d'utilitzar
+l'Exchange com a connector (el bot&oacute; per a l'Exchange ja no hi
+&eacute;s) i admet l'&uacute;s d'entrades Memo (o VJOURNAL) en els
+fitxers iCal. <br>
+
+
+
+
+
+              
+              
+              
+              
+              <h3>Escriptura i composici&oacute;&nbsp;</h3>
+
+
+
+
+
+              "<span style="font-weight: bold;">gedit</span>",
+el flexible editor de textos del GNOME, t&eacute; moltes noves funcions
+a la interf&iacute;cie d'usuari que s&oacute;n part de la gran feina
+realitzada per a admetre l'&uacute;s de m&uacute;ltiples documents. Com
+a resultat, ara &eacute;s molt m&eacute;s f&agrave;cil treballar amb
+m&uacute;ltiples documents (per exemple de codi font) amb el gedit.
+Afegint aix&ograve; a un potent ressaltament sint&agrave;ctic i a
+altres funcions, es fa pal&egrave;s que el gedit &eacute;s un editor
+molt &uacute;til per a treballar en molts tipus diferents de projectes
+multidocument..<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img style="width: 561px; height: 307px;" src="art64/gedit.png" alt="" title=""></center>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">el gedit, amb fitxers amb codi
+font oberts, pot desar-los a servidors remots</span><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              <br>
+La funci&oacute; de poder llegir i escriure documents en servidors
+remots est&agrave; finalment disponible i &eacute;s estable, i
+&eacute;s una potent eina per a l'edici&oacute; de fitxers remots (com
+ara llocs web) sense haver de patir el retard de l'acc&eacute;s a la
+xarxa des d'una m&agrave;quina remota.<br>
+
+
+
+
+
+              <br>
+Tamb&eacute; &eacute;s nova la possibilitat d'escriure connectors en
+Python; ara, la funcionalitat de gedit es pot ampliar f&agrave;cilment
+sense haver d'escriure codi en C. Entre els potents nous connectors
+trobem l'execuci&oacute; d'ordres externes, com ara ''make'',
+utilitzant dreceres de teclat, la possibilitat de compleci&oacute;
+basada en etiquetes i una consola Python interactiva.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img style="width: 540px; height: 448px;" src="art64/gedit-plugins.png" alt="" title="">
+              </center>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">des del di&agrave;leg de
+connectors del gedit, podem configurar connectors actius per a satisfer
+els nostres requeriments</span><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              
+              
+              
+              
+              <h3>Un home ben vestit</h3>
+Com tot home ben vestit sap, les noies embogeixen amb els
+gr&agrave;fics d'aspecte suau. Gr&agrave;cies a la disponibilitat de
+Cairo a l'escriptori, la fi dels gr&agrave;fics mediocres i les
+l&iacute;nies cantelludes &eacute;s a prop.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img src="art64/system-monitor.png" alt="" title=""></center>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">s'han acabat les
+l&iacute;nies cantelludes al
+monitor del sistema del GNOME. </span><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              
+              
+              
+              
+              <h3>El dormilega</h3>
+
+
+
+
+
+              
+              
+              
+              
+              <p align="justify">El GNOME Screensaver &eacute;s un nou
+m&ograve;dul d'estalvi de pantalla per al GNOME. A m&eacute;s dels nous
+estalvis de pantalla, tamb&eacute; pot usar els nostres cl&agrave;ssics
+favorits d'Xscreensaver. El GNOME Screensaver ofereix una bona
+integraci&oacute; amb l'inminent gestor d'energia del GNOME, admet
+l'acessibilitat i t&eacute; di&agrave;legs tradu&iuml;bles.<br>
+
+
+
+
+
+              </p>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img style="width: 596px; height: 427px;" src="art64/screensaver-dialog.png" alt="" title=""></center>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">La
+configuraci&oacute; del GNOME Screensaver
+previsualitza el Floating Feet </span><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              
+              
+              
+              
+              <h3>Nom&eacute;s &eacute;s so</h3>
+
+
+
+
+
+              
+              
+              
+              
+              <p align="justify">Tot millorant la capacitat multim&egrave;dia, el GNOME 2.14 es distribuir&agrave; amb el&nbsp;<a href="http://www.gstreamer.org/">GStreamer</a>
+0.10, la darrera branca d'aquesta popular plataforma multim&egrave;dia.
+El GStreamer 0.10 &eacute;s m&eacute;s r&agrave;pid i m&eacute;s
+estable que qualsevol dels seus predecessors, i podreu comprovar-ho al
+GNOME. Tant el "<span style="font-weight: bold;">Totem</span>" com el "<span style="font-weight: bold;">Sound Juicer</span>"
+i el mesclador s'han convertit en el GStreamer 0.10. El GStreamer 0.10
+tamb&eacute; &eacute;s compatible amb els inminents connectors
+multim&egrave;dia amb llic&egrave;ncia de&nbsp;<a href="http://www.fluendo.com/">Fluendo</a> (el connector per a MP3 ja est&agrave; disponible).<br>
+
+
+
+
+
+              </p>
+
+
+
+
+
+              
+              
+              
+              
+              <h3>Opcions</h3>
+De vegades, les coses que des de sempre havien estat molt complicades
+es tornen ben senzilles. &Eacute;s el cas del quadre de di&agrave;leg
+de les aplicacions preferides. La paraula seria "<span style="font-style: italic;">est&egrave;tica</span>".<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img src="art64/preferred-application.png" alt="" title=""></center>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">
+trieu les vostres
+aplicacions preferides de la llista d'aplicacions registrades, o
+b&eacute; introdu&iuml;u una ordre personalitzada</span><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+		      <center><img src="art64/sound-preferences.png" alt="" title=""></center>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">les prefer&egrave;ncies de
+so
+tamb&eacute;
+ofereixen m&eacute;s opcions i de manera m&eacute;s senzilla.</span><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              
+              
+              
+              
+              <h3>Esteu veient el mateix que jo?</h3>
+Estan arribant un munt de coses fant&agrave;stiques al m&oacute;n del
+GNOME. Encara no formen part de l'escriptori oficial del GNOME,
+per&ograve; ja s'estan integrant perfectamnent i poden apar&egrave;ixer
+en pr&ograve;ximes distribucions. Quan s'hagin provat i revisat
+m&eacute;s a fons, espereu-les tamb&eacute; al GNOME.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img src="art64/gnome-power-manager.png" alt="" title=""></center>
+
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">GNOME Power Manager</span><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              <br>
+El GNOME Power Manager &eacute;s la generaci&oacute; seg&uuml;ent de
+sistemes de gesti&oacute; d'energia constru&iuml;t sobre la capa
+d'abstracci&oacute; de maquinari (HAL, ''Hardware Abstraccion Layer'').
+Proporciona als usuaris el poder de controlar molts aspectes de la
+gesti&oacute; d'energia a l'escriptori, especialment en ordinadors
+port&agrave;tils.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <center><img src="art64/libnotify.png" alt="" title=""></center>
+
+
+
+
+
+              
+              
+              
+              
+              <div style="text-align: center;"><span style="font-style: italic;">Estructura de
+notificaci&oacute;</span><br>
+
+
+
+
+
+              </div>
+
+
+
+
+
+              <br>
+L'estructura de notificaci&oacute; &eacute;s un conjunt de ginys de
+notificaci&oacute; que es trobaven a faltar molt al GNOME. Moltes
+aplicacions ja poden aprofitar aquesta estructura de notificaci&oacute;
+si hi &eacute;s present. Hi ha qui troba que els avisos emergents
+d'altres entorns d'escriptori s&oacute;n enutjosos, aix&iacute; que
+GNOME, per a evitar-ho, est&agrave; treballant en unes directrius
+d'eliminaci&oacute; per a la seva interf&iacute;cie humana (''Human
+Interface Guidelines'') abans del GNOME 2.16.<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <h3>Us ha agradat aquesta p&agrave;gina?</h3>
+Si us ha agradat aquesta p&agrave;gina, us recomanem tamb&eacute;&nbsp;<a href="http://www.gnomejournal.org/">The
+GNOME Journal</a>, el diari oficial del Projecte GNOME. Llegiu-lo avui mateix!<br>
+
+
+
+
+
+              <br>
+
+
+
+
+
+              
+              
+              
+              
+              <table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+
+
+
+
+
+                <tbody>
+
+
+
+
+
+                  <tr>
+
+
+
+
+
+                    <td>Tots els
+comentaris/queixes/consultes/censures, al Davyd Madeley. Gr&agrave;cies
+a l'Andy Fitzsimon per a ajudar-nos en la creaci&oacute; de
+gr&agrave;fics de rendiment. Gr&agrave;cies al Ray Strode per les
+imatges del gestor de composicions Metacity. Gr&agrave;cies a Harish
+Krishnaswamy
+per
+deixar-me un compte de Hula. Gr&agrave;cies a l'extensa comunitat GNOME
+per la lectura de proves. GNOME
+&copy;
+1997-2006, Free Software Foundation i altres Aquesta p&agrave;gina
+&copy; 2006, Davyd Madeley<br>
+
+
+
+
+
+                    <br>
+
+
+
+
+
+                    
+                    
+                    
+                    
+                    <center><a href="http://creativecommons.org/licenses/by-sa/2.5/"><img style="border: 0px solid ; width: 88px; height: 31px;" src="http://creativecommons.org/images/public/somerights20.gif" alt=""></a></center>
+
+
+
+
+
+                    <br>
+
+
+
+
+
+Llic&egrave;ncia Creative Commons Aquest treball est&agrave;
+llicenciat
+sota una llic&egrave;ncia <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative
+Commons
+Atribuci&oacute;-CompartirIgual 2.5 License</a>.</td>
+
+
+
+
+
+                  </tr>
+
+
+
+
+
+                
+                
+                
+                
+                </tbody>
+              
+              
+              
+              
+              </table>
+
+
+
+
+
+              <br>
+
+
+              <a href="http://www.gnome.org/%7Edavyd/gnome-2-14/">Enlla&ccedil; a l'article original</a>
+- Traducci&oacute; de: Toni Hermoso, Francesc Dorca, Jordi Mas, Xavier
+Conde, Pau Cabot, Carme Maneiro i Montserrat Ar&eacute;valo.<br>
+
+
+              <br>
+
+
+
+
+
+              </td>
+
+
+
+
+
+            </tr>
+
+
+
+
+
+          
+          
+          
+          
+          </tbody>
+        
+        
+        
+        
+        </table>
+
+
+
+
+
+        </div>
+
+
+
+
+
+      </blockquote>
+
+
+
+
+
+      </td>
+
+
+
+
+
+    </tr>
+
+
+
+
+
+    <tr>
+
+
+
+
+
+      <td colspan="3">&nbsp;</td>
+
+
+
+
+
+    </tr>
+
+
+
+
+
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+<table align="center" bgcolor="#ffffcc" border="0" width="700">
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+    <tr>
+
+
+
+
+
+      <td> </td>
+
+
+
+
+
+    </tr>
+
+
+
+
+
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+<!--#exec cmd="/home/sites/org.softcatala/web/cgi-bin/gaudi/final.pl articles" -->
+</body>
+</html>
